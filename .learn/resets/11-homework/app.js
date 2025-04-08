@@ -11,7 +11,7 @@ console.log(sum(7,3))
 // One euro is:
 let oneEuroIs = {
     "JPY": 156.5, // japan yen
-    "USD": 1.07, // us dollar =
+    "USD": 1.07, // us dollar
     "GBP": 0.87, // british pound
 }
 
@@ -20,14 +20,11 @@ const fromEuroToDollar = (euro) => {
 }
 
 const fromDollarsToYen = (dolar) => {
-
-    const euro = dolar / 1.07
-        return euro * 156.5;
+    return dolar * 156.5;
 }
 
-const fromYenToPound = (yen) => {
-    const euro = yen / 156.5
-    return euro * 0.87;
+const fromYenToPound = (dolar) => {
+    return dolar * 156.5;
 }
 
 
